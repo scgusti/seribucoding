@@ -76,12 +76,13 @@
 					<li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
 				</ul>
 				<ul class="copyright">
-					<li>&copy; 2024 Seribucoding.</li>
+					<li>&copy; <span id="year"></span> Seribucoding. All Rights Reserved.</li>
 				</ul>
 			</footer>
 
 		<!-- Scripts -->
 			<script src="assets/js/main.js"></script>
+			<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
 
 	</body>
 </html>

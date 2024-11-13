@@ -80,4 +80,33 @@
 
 		}
 
+		// Inisialisasi animasi Lottie: Memuat animasi Lottie pada kontainer dengan id "scrollToTopBtn" 
+		var scrollToTopAnim = lottie.loadAnimation({
+			container: document.getElementById('scrollToTopBtn'), // Elemen tempat animasi ditampilkan
+			renderer: 'svg',  // Menggunakan renderer SVG untuk kualitas yang lebih baik
+			loop: true,        // Animasi akan loop secara terus-menerus
+			autoplay: true,    // Animasi akan otomatis diputar ketika dimuat
+			path: 'images/goup.json' // Lokasi file animasi JSON
+		});
+		// Menambahkan efek scroll untuk tombol scroll-to-top
+		$(document).ready(function() {
+			var $scrollToTop = $('#scrollToTopBtn');  // Tombol untuk scroll ke atas
+
+		// Menampilkan tombol saat halaman discroll lebih dari 200px
+			$(window).on('scroll', function() {
+				if ($(window).scrollTop() > 200) {
+					$scrollToTop.fadeIn();
+				} else {
+					$scrollToTop.fadeOut();
+				}
+			});
+
+		// Menambahkan smooth scroll ke atas saat tombol diklik
+			$scrollToTop.on('click', function(e) {
+				e.preventDefault();
+				// Menambahkan efek smooth scroll saat tombol diklik
+				$('html, body').animate({ scrollTop: 0 }, 1000); // 1000ms (1 detik)
+			});
+		});
+
 })(jQuery);

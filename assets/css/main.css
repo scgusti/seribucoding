@@ -2519,7 +2519,7 @@ input, select, textarea {
 			input[type="button"].primary:hover,
 			button.primary:hover,
 			.button.primary:hover {
-				background-color: #ef5e4a !important;
+				background-color: #4e3c3a !important; /*#ef5e4a*/
 			}
 
 			input[type="submit"].primary:active,
@@ -2700,14 +2700,21 @@ input, select, textarea {
 			order: 1;
 			border-radius: 0;
 			width: 40%;
+			overflow: hidden; /* Menyembunyikan bagian gambar yang keluar dari kontainer */
 		}
 
 			.spotlight .image img {
 				border-radius: 0;
 				width: 100%;
+				transition: transform 0.3s ease, opacity 0.3s ease; /* Efek transisi */
+			}
+			.spotlight .image img:hover {
+				transform: scale(1.1); /* Memperbesar gambar saat hover */
+				opacity: 0.8; /* Mengurangi opacity saat hover */
+				width: 100%;
 			}
 
-		.spotlight .content {
+		.spotlight .contentRight, .spotlight .contentLeft {
 			padding: 2em 4em 0.1em 4em ;
 			-moz-order: 2;
 			-webkit-order: 2;
@@ -2764,14 +2771,19 @@ input, select, textarea {
 			background-color: rgba(0, 0, 0, 0.75);
 		}
 
-		@media screen and (max-width: 1280px) {
+		@media screen and (max-width: 2280px) {
 
 			.spotlight .image {
 				width: 45%;
 			}
 
-			.spotlight .content {
+			.spotlight .contentRight {
 				width: 55%;
+				text-align: right;
+			}
+			.spotlight .contentLeft {
+				width: 55%;
+				text-align: left;
 			}
 
 		}
@@ -2790,7 +2802,7 @@ input, select, textarea {
 					width: 100%;
 				}
 
-				.spotlight .content {
+				.spotlight .contentRight, .spotlight .contentLeft {
 					padding: 4em 3em 2em 3em ;
 					max-width: none;
 					text-align: center;
@@ -2801,7 +2813,7 @@ input, select, textarea {
 
 		@media screen and (max-width: 736px) {
 
-			.spotlight .content {
+			.spotlight .contentRight, .spotlight .contentLeft {
 				padding: 3em 2em 1em 2em ;
 			}
 
@@ -4005,3 +4017,16 @@ input, select, textarea {
 		background-color: #1d242a;
 	}
 
+/* scroll (opsi menggunakan lootie) */
+	.scroll-to-top {
+		position: fixed;
+		bottom: 20px; /* Sesuaikan dengan posisi yang diinginkan */
+		right: 20px;  /* Sesuaikan dengan posisi yang diinginkan */
+		width: 50px;  /* Atur ukuran animasi */
+		height: 50px; /* Atur ukuran animasi */
+		z-index: 9999;
+    	display: none;
+		cursor: pointer; /* Memberikan indikasi interaksi */
+		text-decoration: none;  /* Menghilangkan underline (garis bawah) */
+    	border: none;           /* Menghilangkan border jika ada */
+	}
