@@ -1,6 +1,6 @@
 # Perkenalan SeribuCoding  
 
-Selamat datang di **SeribuCoding**, sebuah platform yang lahir dari semangat komunitas untuk terus berkreasi dan membantu Anda dalam menghadapi tantangan dunia digital dan desain. SeribuCoding didirikan pada tahun 2020 oleh lima pemuda visioner: Gusti, Bekti, Ira, Anas, dan Imam. Terinspirasi oleh semangat berwirausaha, mereka menggabungkan bakat serta keahlian masing-masing untuk membangun pondasi usaha yang kokoh dan berdaya saing. Kami hadir untuk memberikan solusi terbaik bagi kebutuhan Anda, mulai dari:
+Selamat datang di **SeribuCoding**, sebuah platform yang lahir dari semangat komunitas untuk terus berkreasi dan membantu Anda dalam menghadapi tantangan dunia digital dan desain. SeribuCoding didirikan pada tahun 2020 oleh lima pemuda visioner. Terinspirasi oleh semangat berwirausaha, mereka menggabungkan bakat serta keahlian masing-masing untuk membangun pondasi usaha yang kokoh dan berdaya saing. Kami hadir untuk memberikan solusi terbaik bagi kebutuhan Anda, mulai dari:
 
 - **Pembuatan Website**  
 - **Pengembangan Aplikasi Mobile**  
